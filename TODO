@@ -1,0 +1,5 @@
+-	create tool for saving the pictures
+-	generate learning labeled dataset 50 pictures, 30 learning, 20 supervise
+-	create training behavior on convolutionalLayer
+	-	create filters based on the learning data
+	-	send the new weights to API

@@ -1,0 +1,15 @@
+version: '3.5'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: ./api/Dockerfile
+    command: python3 -m api.v1.app
+    ports:
+      - 8080:6089
+    depends_on:
+      - web_client
+  web_client:
+    build: ./web_client
+    

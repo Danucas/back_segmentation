@@ -1,0 +1,76 @@
+:root {
+	background-color: rgb(255, 255, 255);
+}
+
+
+[container="videos"] {
+	display: flex;
+	position: relative;
+	height: auto;
+}
+
+[render="camera"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: red;
+	object-fit: contain;
+}
+
+[render="video"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgb(230, 230, 230);
+	object-fit: cover;
+	/* border-radius: 18px; */
+}
+[render="test"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* border-radius: 12px; */
+}
+[render="train"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px solid rgba(128, 128, 128, 0.438);
+	/* border-radius: 12px; */
+}
+
+[container="controls"] {
+	display: block;
+	padding: 0;
+	margin: 0;
+	max-height: 100px;
+}
+label {
+	margin: 0;
+}
+input {
+	width: 0;
+}
+[container="controls"] button, label{
+	font-family: sans-serif;
+	max-width: 120px;
+	margin: 4px 12px;
+	padding: 8px 16px;
+	background-color: white;
+	border: 3px solid white;
+	color: black;
+	font-size: 18px;
+	cursor: pointer;
+	border-radius: 8px;
+	outline: none;
+	margin-top: 200px;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.404);
+}
+[container="controls"] button:hover, label:hover{
+	border: 3px solid brown;
+	background-color: rgb(253, 201, 152);
+}
+[container="controls"] button:active{
+	color: white;
+	background-color: rgb(240, 154, 74);
+}

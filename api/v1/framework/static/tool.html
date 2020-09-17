@@ -1,0 +1,17 @@
+<div container="videos">
+	<video render="camera" width="480" height="320" controls hidden></video>
+	<canvas render="video"></canvas>
+	<canvas render="test"></canvas>
+	<canvas render="train"></canvas>
+</div>
+<div container="controls">
+	<button action="start">start camera</button>
+	<button action="picture">take picture</button>
+	<button action="segment">detect</button>
+	<button action="stop">stop</button>
+</div>
+<div container="controls" style="margin-top: 0px;">
+	<label for="imageFile">Upload Image</label><input id="imageFile" type="file" style="visibility: hidden;" onchange="uploadFile(this.files)" placeholder="image">
+	<!-- <label for="train">Upload Train data</label><input type="file" id="train" style="visibility: hidden;" onchange="uploadTrainData(this.files)" placeholder="train data"> -->
+	<button action="train">Train</button>
+</div>
